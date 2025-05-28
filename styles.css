@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #0e0e0e;
   color: #fff;
   line-height: 1.6;
 }
@@ -86,8 +86,9 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #ffffff, #9e000d);
+  background: linear-gradient(to right, #ffffff, #e60012);
   padding-right: 1rem;
+  box-shadow: #bbbbbb 0px 0px 4px 0px;
 }
 
 .nav-links {
@@ -105,7 +106,7 @@ main {
 }
 
 .nav-links a:hover {
-  color: #bbbbbb;
+  color: #000000;
 }
 
 /* hero section */
@@ -127,6 +128,9 @@ main {
 }
 
 /* main section */
+main {
+  background-color: #0e0e0e;
+}
 
 section h2 {
   margin-bottom: 0.75rem;
