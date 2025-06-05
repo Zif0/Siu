@@ -22,7 +22,8 @@ body section{
 
 main {
   margin: 0 auto;
-  padding-bottom: 4rem;
+  padding: 0 2rem 2rem 2rem;
+
 }
 
 #sign-container {
