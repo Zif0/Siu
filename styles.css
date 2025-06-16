@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -108,7 +112,7 @@ main {
   text-decoration: none;
   color: #fff;
   font-weight: 750;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   transition: color 0.25s;
 }
 
