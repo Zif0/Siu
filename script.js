@@ -34,25 +34,39 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlidePosition();
   });
 
-    // Hamburger menu
-  const hamburger = document.getElementById("hamburger");
-  const navMenu = document.getElementById("navMenu");
-  const overlay = document.querySelector(".mobileOverlay");
+  // Hero Animation
+  const slides = document.querySelectorAll(".hero-slide");
+  let current = 0;
 
-  function toggleMobileMenu() {
-    navMenu.classList.toggle("showMenu");
-    overlay.classList.toggle("showOverlay");
-    hamburger.classList.toggle("active");
+  function showSlide(next) {
+    if (next === current) return;
+
+    slides.forEach((slide, index) => {
+      slide.classList.remove("active", "previous");
+      slide.style.zIndex = "0";
+    });
+
+    slides[current].classList.add("previous");
+    slides[current].style.zIndex = "1";
+
+    slides[next].classList.add("active");
+    slides[next].style.zIndex = "2";
+
+    current = next;
   }
 
-  hamburger.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", toggleMobileMenu);
-
-  navMenu.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("showMenu");
-      overlay.classList.remove("showOverlay");
-      hamburger.classList.remove("active");
-    });
+  slides.forEach((slide, index) => {
+    slide.classList.remove("active", "previous");
+    if (index === 0) {
+      slide.classList.add("active");
+      slide.style.zIndex = "2";
+    } else {
+      slide.style.zIndex = "0";
+    }
   });
+
+  setInterval(() => {
+    const next = (current + 1) % slides.length;
+    showSlide(next);
+  }, 4000);
 });
