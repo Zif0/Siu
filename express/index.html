@@ -15,32 +15,63 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <img src="/pictures/Siu Logo.png" alt="Siu Logo" class="logo" />      
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/ayce">All You Can Eat</a></li>
-                <li><a href="/express">Express</a></li>
-                <li><a href="/about">About Us</a></li>
-            </ul>
+      <nav class="navbar">
+        <img src="/pictures/Siu Logo.png" alt="Siu Logo" class="logo" />
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/ayce">All You Can Eat</a></li>
+          <li><a href="/express">Express</a></li>
+          <li><a href="/about">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="mobileMenu" class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/ayce">All You Can Eat</a></li>
+            <li><a href="/express">Express</a></li>
+            <li><a href="/about">About Us</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main id="menu">
         <section id="menu-container">
+
+
             <section id="menus">
-                <h1>Menus</h1>
+                <h1>Express</h1>
                 <nav class="menu-nav">
                     <ul class="menu-links">
                         <li><a href="#carte">A La Carte</a></li>
                         <li><a href="#drinks">Drinks</a></li>                        
                     </ul>
+                </nav>
             </section>
 
+            <section id="gallery">
+                <div class="slider">
+                    <button class="slidePrev">&#10094;</button>
+                    <button class="slideNext">&#10095;</button>
+                    <div class="slides">
+                        <img src="/pictures/sfr.png" alt="Shrimp Fried Rice" class="slide" />
+                        <img src="/pictures/bfr.png" alt="Beef Fried Rice" class="slide" />
+                        <img src="/pictures/cm.png" alt="Shrimp Chow Mein" class="slide" />         
+                        <img src="/pictures/pcm.png" alt="Pork Chow Mein" class="slide" />                     
+                    </div>
+                </div>
+            </section>            
+
             <section id="carte">
-                <p>Our A La Carte menu offers a selection of dishes that can be ordered individually. Enjoy the flexibility of choosing your favorites without the commitment of an all-you-can-eat option.</p>
+                <p>Our express menu offers a selection of dishes that can be ordered individually. Enjoy the flexibility of choosing your favorites without the commitment of an all-you-can-eat option.</p>
                 <img>
             </section>
+
+
+
             <section id="gallery">
                 <div class="slider">
                     <button class="slidePrev">&#10094;</button>
@@ -57,6 +88,7 @@
                 <p>Our Drink menu offers a variety of beverages that compliments the diversity of food.</p>
                 <img>
             </section>
+            
             <section id="gallery">
                 <div class="slider">
                     <div class="slides">

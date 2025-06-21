@@ -15,30 +15,59 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <img src="/pictures/Siu Logo.png" alt="Siu Logo" class="logo" />      
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/ayce">All You Can Eat</a></li>
-                <li><a href="/express">Express</a></li>
-                <li><a href="/about">About Us</a></li>
-            </ul>
+      <nav class="navbar">
+        <img src="/pictures/Siu Logo.png" alt="Siu Logo" class="logo" />
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/ayce">All You Can Eat</a></li>
+          <li><a href="/express">Express</a></li>
+          <li><a href="/about">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div id="mobileMenu" class="mobile-menu-overlay">
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/ayce">All You Can Eat</a></li>
+            <li><a href="/express">Express</a></li>
+            <li><a href="/about">About Us</a></li>
+          </ul>
         </nav>
+      </div>
     </header>
 
     <main id="menu">
         <section id="menu-container">
             <section id="menus">
-                <h1>Menus</h1>
+                <h1>All You Can Eat</h1>
                 <nav class="menu-nav">
                     <ul class="menu-links">
-                        <li><a href="#ayce">All You Can Eat</a></li>
+                        <li><a href="#ayce">AYCE Menu</a></li>
                         <li><a href="#drinks">Drinks</a></li>                        
                     </ul>
+                </nav>
             </section>
 
+            <section id="gallery">
+                <div class="slider">
+                    <button class="slidePrev">&#10094;</button>
+                    <button class="slideNext">&#10095;</button>
+                    <div class="slides">
+                        <img src="/pictures/galbi.png" alt="Galbi" class="slide" /> 
+                        <img src="/pictures/steak.png" alt="Galbi" class="slide" />                        
+                        <img src="/pictures/porkbelly.png" alt="Pork Belly" class="slide" />
+                        <img src="/pictures/porkchop.png" alt="Pork Chop" class="slide" />
+                        <img src="/pictures/beef.png" alt="Beef Bulgogi" class="slide" />         
+                        <img src="/pictures/tstripe.png" alt="Thousand Stripe" class="slide" />    
+                    </div>
+                </div>
+            </section>  
+
             <section id="ayce">
-                <p>Our all you can eat menu offers a selection of meats, appetizers, and sides. Enjoy variety, ordering up to 4 meats per round!</p>
+                <p>Our all you can eat menu offers a selection of meats, appetizers, and sides. Enjoy variety, ordering up to 4 meats per round!</p><br>
+                <p><b>Prime grade meats are offered depending on supplier availability!</b></p>
             </section>
             <section id="gallery">
                 <div class="slider">
